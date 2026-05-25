@@ -106,7 +106,7 @@ Instead of performing a single attention function with _d_ model-dimensional key
 
 Multi-head attention allows the model to jointly attend to information from different representation subspaces at different positions. With a single attention head, averaging inhibits this. 
 
-> 4To illustrate why the dot products get large, assume that the components of _q_ and _k_ are independent random variables with mean 0 and variance 1. Then their dot product, _q · k_ =[�] _[d] i_ =1 _[k][q][i][k][i]_[, has mean][ 0][ and variance] _[ d][k]_[.] 
+> 4To illustrate why the dot products get large, assume that the components of _q_ and _k_ are independent random variables with mean 0 and variance 1. Then their dot product, _q · k_ = sum_i=1^d_k q_i k_i, has mean 0 and variance d_k. 
 
 4 
 
